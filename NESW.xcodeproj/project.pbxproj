@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC835FCD200FEE36002F1B4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC835FCC200FEE36002F1B4B /* AppDelegate.swift */; };
+		CC835FCF200FEE36002F1B4B /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC835FCE200FEE36002F1B4B /* MainVC.swift */; };
+		CC835FD2200FEE36002F1B4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC835FD0200FEE36002F1B4B /* Main.storyboard */; };
+		CC835FD4200FEE36002F1B4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC835FD3200FEE36002F1B4B /* Assets.xcassets */; };
+		CC835FD7200FEE36002F1B4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC835FD5200FEE36002F1B4B /* LaunchScreen.storyboard */; };
+		CC835FE2200FEE36002F1B4B /* NESWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC835FE1200FEE36002F1B4B /* NESWTests.swift */; };
+		CC835FED200FEE36002F1B4B /* NESWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC835FEC200FEE36002F1B4B /* NESWUITests.swift */; };
+		CC835FFB200FF6BA002F1B4B /* WestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC835FFA200FF6BA002F1B4B /* WestVC.swift */; };
+		CC835FFD20101BD8002F1B4B /* EastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC835FFC20101BD8002F1B4B /* EastVC.swift */; };
+		CC835FFF20101C93002F1B4B /* NorthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC835FFE20101C93002F1B4B /* NorthVC.swift */; };
+		CC83600120101D28002F1B4B /* SouthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC83600020101D28002F1B4B /* SouthVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC835FDE200FEE36002F1B4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC835FC1200FEE36002F1B4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC835FC8200FEE36002F1B4B;
+			remoteInfo = NESW;
+		};
+		CC835FE9200FEE36002F1B4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC835FC1200FEE36002F1B4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC835FC8200FEE36002F1B4B;
+			remoteInfo = NESW;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC835FC9200FEE36002F1B4B /* NESW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NESW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC835FCC200FEE36002F1B4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC835FCE200FEE36002F1B4B /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		CC835FD1200FEE36002F1B4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC835FD3200FEE36002F1B4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC835FD6200FEE36002F1B4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC835FD8200FEE36002F1B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC835FDD200FEE36002F1B4B /* NESWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NESWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC835FE1200FEE36002F1B4B /* NESWTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NESWTests.swift; sourceTree = "<group>"; };
+		CC835FE3200FEE36002F1B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC835FE8200FEE36002F1B4B /* NESWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NESWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC835FEC200FEE36002F1B4B /* NESWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NESWUITests.swift; sourceTree = "<group>"; };
+		CC835FEE200FEE36002F1B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC835FFA200FF6BA002F1B4B /* WestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WestVC.swift; sourceTree = "<group>"; };
+		CC835FFC20101BD8002F1B4B /* EastVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EastVC.swift; sourceTree = "<group>"; };
+		CC835FFE20101C93002F1B4B /* NorthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthVC.swift; sourceTree = "<group>"; };
+		CC83600020101D28002F1B4B /* SouthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC835FC6200FEE36002F1B4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC835FDA200FEE36002F1B4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC835FE5200FEE36002F1B4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC835FC0200FEE36002F1B4B = {
+			isa = PBXGroup;
+			children = (
+				CC835FCB200FEE36002F1B4B /* NESW */,
+				CC835FE0200FEE36002F1B4B /* NESWTests */,
+				CC835FEB200FEE36002F1B4B /* NESWUITests */,
+				CC835FCA200FEE36002F1B4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC835FCA200FEE36002F1B4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC835FC9200FEE36002F1B4B /* NESW.app */,
+				CC835FDD200FEE36002F1B4B /* NESWTests.xctest */,
+				CC835FE8200FEE36002F1B4B /* NESWUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC835FCB200FEE36002F1B4B /* NESW */ = {
+			isa = PBXGroup;
+			children = (
+				CC835FCC200FEE36002F1B4B /* AppDelegate.swift */,
+				CC835FCE200FEE36002F1B4B /* MainVC.swift */,
+				CC835FD0200FEE36002F1B4B /* Main.storyboard */,
+				CC835FFC20101BD8002F1B4B /* EastVC.swift */,
+				CC835FFE20101C93002F1B4B /* NorthVC.swift */,
+				CC83600020101D28002F1B4B /* SouthVC.swift */,
+				CC835FFA200FF6BA002F1B4B /* WestVC.swift */,
+				CC835FD3200FEE36002F1B4B /* Assets.xcassets */,
+				CC835FD5200FEE36002F1B4B /* LaunchScreen.storyboard */,
+				CC835FD8200FEE36002F1B4B /* Info.plist */,
+			);
+			path = NESW;
+			sourceTree = "<group>";
+		};
+		CC835FE0200FEE36002F1B4B /* NESWTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC835FE1200FEE36002F1B4B /* NESWTests.swift */,
+				CC835FE3200FEE36002F1B4B /* Info.plist */,
+			);
+			path = NESWTests;
+			sourceTree = "<group>";
+		};
+		CC835FEB200FEE36002F1B4B /* NESWUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC835FEC200FEE36002F1B4B /* NESWUITests.swift */,
+				CC835FEE200FEE36002F1B4B /* Info.plist */,
+			);
+			path = NESWUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC835FC8200FEE36002F1B4B /* NESW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC835FF1200FEE36002F1B4B /* Build configuration list for PBXNativeTarget "NESW" */;
+			buildPhases = (
+				CC835FC5200FEE36002F1B4B /* Sources */,
+				CC835FC6200FEE36002F1B4B /* Frameworks */,
+				CC835FC7200FEE36002F1B4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NESW;
+			productName = NESW;
+			productReference = CC835FC9200FEE36002F1B4B /* NESW.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC835FDC200FEE36002F1B4B /* NESWTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC835FF4200FEE36002F1B4B /* Build configuration list for PBXNativeTarget "NESWTests" */;
+			buildPhases = (
+				CC835FD9200FEE36002F1B4B /* Sources */,
+				CC835FDA200FEE36002F1B4B /* Frameworks */,
+				CC835FDB200FEE36002F1B4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC835FDF200FEE36002F1B4B /* PBXTargetDependency */,
+			);
+			name = NESWTests;
+			productName = NESWTests;
+			productReference = CC835FDD200FEE36002F1B4B /* NESWTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC835FE7200FEE36002F1B4B /* NESWUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC835FF7200FEE36002F1B4B /* Build configuration list for PBXNativeTarget "NESWUITests" */;
+			buildPhases = (
+				CC835FE4200FEE36002F1B4B /* Sources */,
+				CC835FE5200FEE36002F1B4B /* Frameworks */,
+				CC835FE6200FEE36002F1B4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC835FEA200FEE36002F1B4B /* PBXTargetDependency */,
+			);
+			name = NESWUITests;
+			productName = NESWUITests;
+			productReference = CC835FE8200FEE36002F1B4B /* NESWUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC835FC1200FEE36002F1B4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Lisa Ryland";
+				TargetAttributes = {
+					CC835FC8200FEE36002F1B4B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					CC835FDC200FEE36002F1B4B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CC835FC8200FEE36002F1B4B;
+					};
+					CC835FE7200FEE36002F1B4B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CC835FC8200FEE36002F1B4B;
+					};
+				};
+			};
+			buildConfigurationList = CC835FC4200FEE36002F1B4B /* Build configuration list for PBXProject "NESW" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC835FC0200FEE36002F1B4B;
+			productRefGroup = CC835FCA200FEE36002F1B4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC835FC8200FEE36002F1B4B /* NESW */,
+				CC835FDC200FEE36002F1B4B /* NESWTests */,
+				CC835FE7200FEE36002F1B4B /* NESWUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC835FC7200FEE36002F1B4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC835FD7200FEE36002F1B4B /* LaunchScreen.storyboard in Resources */,
+				CC835FD4200FEE36002F1B4B /* Assets.xcassets in Resources */,
+				CC835FD2200FEE36002F1B4B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC835FDB200FEE36002F1B4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC835FE6200FEE36002F1B4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC835FC5200FEE36002F1B4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC83600120101D28002F1B4B /* SouthVC.swift in Sources */,
+				CC835FFF20101C93002F1B4B /* NorthVC.swift in Sources */,
+				CC835FFB200FF6BA002F1B4B /* WestVC.swift in Sources */,
+				CC835FFD20101BD8002F1B4B /* EastVC.swift in Sources */,
+				CC835FCF200FEE36002F1B4B /* MainVC.swift in Sources */,
+				CC835FCD200FEE36002F1B4B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC835FD9200FEE36002F1B4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC835FE2200FEE36002F1B4B /* NESWTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC835FE4200FEE36002F1B4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC835FED200FEE36002F1B4B /* NESWUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC835FDF200FEE36002F1B4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC835FC8200FEE36002F1B4B /* NESW */;
+			targetProxy = CC835FDE200FEE36002F1B4B /* PBXContainerItemProxy */;
+		};
+		CC835FEA200FEE36002F1B4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC835FC8200FEE36002F1B4B /* NESW */;
+			targetProxy = CC835FE9200FEE36002F1B4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC835FD0200FEE36002F1B4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC835FD1200FEE36002F1B4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC835FD5200FEE36002F1B4B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC835FD6200FEE36002F1B4B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC835FEF200FEE36002F1B4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC835FF0200FEE36002F1B4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC835FF2200FEE36002F1B4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E453MRJF9A;
+				INFOPLIST_FILE = NESW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lisaryland.NESW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC835FF3200FEE36002F1B4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E453MRJF9A;
+				INFOPLIST_FILE = NESW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lisaryland.NESW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CC835FF5200FEE36002F1B4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E453MRJF9A;
+				INFOPLIST_FILE = NESWTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lisaryland.NESWTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NESW.app/NESW";
+			};
+			name = Debug;
+		};
+		CC835FF6200FEE36002F1B4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E453MRJF9A;
+				INFOPLIST_FILE = NESWTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lisaryland.NESWTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NESW.app/NESW";
+			};
+			name = Release;
+		};
+		CC835FF8200FEE36002F1B4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E453MRJF9A;
+				INFOPLIST_FILE = NESWUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lisaryland.NESWUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NESW;
+			};
+			name = Debug;
+		};
+		CC835FF9200FEE36002F1B4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E453MRJF9A;
+				INFOPLIST_FILE = NESWUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lisaryland.NESWUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NESW;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC835FC4200FEE36002F1B4B /* Build configuration list for PBXProject "NESW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC835FEF200FEE36002F1B4B /* Debug */,
+				CC835FF0200FEE36002F1B4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC835FF1200FEE36002F1B4B /* Build configuration list for PBXNativeTarget "NESW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC835FF2200FEE36002F1B4B /* Debug */,
+				CC835FF3200FEE36002F1B4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC835FF4200FEE36002F1B4B /* Build configuration list for PBXNativeTarget "NESWTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC835FF5200FEE36002F1B4B /* Debug */,
+				CC835FF6200FEE36002F1B4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC835FF7200FEE36002F1B4B /* Build configuration list for PBXNativeTarget "NESWUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC835FF8200FEE36002F1B4B /* Debug */,
+				CC835FF9200FEE36002F1B4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC835FC1200FEE36002F1B4B /* Project object */;
+}

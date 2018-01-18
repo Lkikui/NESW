@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--NorthVC-->
+        <scene sceneID="gI8-vf-som">
+            <objects>
+                <viewController id="ybs-tH-IDa" customClass="NorthVC" customModule="NESW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fcW-8f-B0T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2X-zY-Ndd">
+                                <rect key="frame" x="154" y="315.5" width="67" height="36"/>
+                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="TrK-Zn-cAP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="South">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eok-YA-Wt0" kind="unwind" identifier="northUnwindToMainVC" unwindAction="unwindToMainVCWithSegue:" id="OoT-t0-dSx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="B2X-zY-Ndd" firstAttribute="centerX" secondItem="fcW-8f-B0T" secondAttribute="centerX" id="1Gs-u1-aIk"/>
+                            <constraint firstItem="B2X-zY-Ndd" firstAttribute="centerY" secondItem="fcW-8f-B0T" secondAttribute="centerY" id="Lxy-qc-R4Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O6O-V6-LpR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YgR-Gg-6HP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="eok-YA-Wt0" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-98" y="-625"/>
+        </scene>
+        <!--WestVC-->
+        <scene sceneID="8JP-Pp-6vv">
+            <objects>
+                <viewController id="w8y-DE-OTG" customClass="WestVC" customModule="NESW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fz0-9F-ZTZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjW-6p-fwm">
+                                <rect key="frame" x="154" y="315" width="67" height="36"/>
+                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="5Qi-2q-mob"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="East">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qna-eL-oXQ" kind="unwind" identifier="westUnwindToMainVC" unwindAction="unwindToMainVCWithSegue:" id="MVW-eN-eHQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OjW-6p-fwm" firstAttribute="centerX" secondItem="fz0-9F-ZTZ" secondAttribute="centerX" id="X8R-Su-yPV"/>
+                            <constraint firstItem="OjW-6p-fwm" firstAttribute="centerY" secondItem="fz0-9F-ZTZ" secondAttribute="centerY" id="Y9j-JZ-W3z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tkQ-NH-sth"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kvr-Lr-SJO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Qna-eL-oXQ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-991.20000000000005" y="116.49175412293854"/>
+        </scene>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="NESW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccc-GR-enA">
+                                <rect key="frame" x="154" y="48" width="67" height="36"/>
+                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="xaD-7r-VGn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="North">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ybs-tH-IDa" kind="presentation" identifier="NorthSegue" id="33Z-jF-nek"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jh-aK-Thk">
+                                <rect key="frame" x="154" y="585" width="67" height="36"/>
+                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="V7a-eJ-zqg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="South">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kuj-YG-XGn" kind="presentation" identifier="SouthSegue" id="os5-0F-CNT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wt-Ps-92r">
+                                <rect key="frame" x="292" y="315" width="67" height="36"/>
+                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="h9Z-Nb-rjG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="East">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vlY-la-WYI" kind="presentation" identifier="EastSegue" id="1mL-xa-WsY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSh-vM-8gz">
+                                <rect key="frame" x="16" y="315" width="67" height="36"/>
+                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="i3y-gh-79l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="West">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="w8y-DE-OTG" kind="presentation" identifier="WestSegue" id="WDD-lW-iMU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ccc-GR-enA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="Hgg-rD-aQE"/>
+                            <constraint firstItem="ccc-GR-enA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kad-np-aKO"/>
+                            <constraint firstItem="SSh-vM-8gz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NeL-Sr-FnR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6jh-aK-Thk" secondAttribute="bottom" constant="46" id="Tbw-pU-ddc"/>
+                            <constraint firstItem="SSh-vM-8gz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="faM-CC-E8J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2wt-Ps-92r" secondAttribute="trailing" constant="16" id="jo8-9s-5CF"/>
+                            <constraint firstItem="2wt-Ps-92r" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lGV-aW-tDP"/>
+                            <constraint firstItem="6jh-aK-Thk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nMs-02-c4h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="117.39130434782609"/>
+        </scene>
+        <!--SouthVC-->
+        <scene sceneID="bg9-ge-qzJ">
+            <objects>
+                <viewController id="kuj-YG-XGn" customClass="SouthVC" customModule="NESW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ah5-yv-8gv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jce-2o-y81">
+                                <rect key="frame" x="154" y="315.5" width="67" height="36"/>
+                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="ec6-jF-XER"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="North">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="G8X-6F-amn" kind="unwind" identifier="southUnwindToMainVC" unwindAction="unwindToMainVCWithSegue:" id="XF7-0G-G0y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jce-2o-y81" firstAttribute="centerY" secondItem="Ah5-yv-8gv" secondAttribute="centerY" id="2oG-6F-cfY"/>
+                            <constraint firstItem="jce-2o-y81" firstAttribute="centerX" secondItem="Ah5-yv-8gv" secondAttribute="centerX" id="94o-4o-S97"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cc8-Hz-8pH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qEX-tk-Uoc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="G8X-6F-amn" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-98" y="901"/>
+        </scene>
+        <!--EastVC-->
+        <scene sceneID="CYr-DB-0TG">
+            <objects>
+                <viewController id="vlY-la-WYI" customClass="EastVC" customModule="NESW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BCb-4k-l0j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ntw-ul-oVV">
+                                <rect key="frame" x="154" y="315" width="67" height="36"/>
+                                <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="B46-lu-0RV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="West">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3hS-N8-fAK" kind="unwind" identifier="eastUnwindToMainVC" unwindAction="unwindToMainVCWithSegue:" id="lIF-RV-xkX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ntw-ul-oVV" firstAttribute="centerY" secondItem="BCb-4k-l0j" secondAttribute="centerY" id="LOb-mo-UM7"/>
+                            <constraint firstItem="Ntw-ul-oVV" firstAttribute="centerX" secondItem="BCb-4k-l0j" secondAttribute="centerX" id="hRn-ro-wob"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fmS-Fm-ky6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rVN-4e-o5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="3hS-N8-fAK" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="769" y="117"/>
+        </scene>
+    </scenes>
+</document>
